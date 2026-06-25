@@ -1,150 +1,148 @@
-\# Technical Decisions
+# Technical Decisions
 
 
 
-\## Decision Log
+## Decision Log
 
 
 
-\### 2026-06-03 — Use Figma for Wireframing and UI/UX Design
+### 2026-06-03 — Use Figma for Wireframing and UI/UX Design
 
 
 
-\*\*Status:\*\* Decided
+**Status:** Decided
 
 
 
-\*\*Options Considered\*\*
+**Options Considered**
 
 
 
-\* Figma
+* Figma
 
-\* Framer
+* Framer
 
-\* Webflow
+* Webflow
 
-\* Direct implementation
+* Direct implementation
 
 
 
-\*\*Why / Tradeoffs\*\*
+**Why / Tradeoffs**
 
 Figma provides a free tier, strong industry adoption, and allows low-fidelity wireframes before implementation. It separates design from coding and encourages iterative feedback.
 
 
 
-\*\*Impact\*\*
+**Impact**
 
 Initial design work will be created in Figma before implementation in code.
 
 
 
-\---
+---
 
 
 
-\### 2026-06-03 — Determine Whether Portfolio Website Requires a Database
+### 2026-06-03 — Determine Whether Portfolio Website Requires a Database
 
 
 
-\*\*Status:\*\* Deferred
+**Status:** Deferred
 
 
 
-\*\*Options Considered\*\*
+**Options Considered**
 
 
 
-\* No database
+* No database
 
-\* File-based content
+* File-based content
 
-\* Relational database
+* Relational database
 
 
 
-\*\*Why / Tradeoffs\*\*
+**Why / Tradeoffs**
 
 Current MVP only needs static content and downloadable resume files. A database adds complexity and maintenance and can be revisited after MVP completion.
 
 
 
-\*\*Impact\*\*
+**Impact**
 
 The MVP will proceed without a database. Future versions may introduce one if dynamic content management becomes necessary.
 
 
 
-\---
+---
 
 
 
-\### 2026-06-03 — Limit MVP to Home, About, Experience, and Contact Pages
+### 2026-06-03 — Limit MVP to Home, About, Experience, and Contact Pages
 
 
 
-\*\*Status:\*\* Decided
+**Status:** Decided
 
 
 
-\*\*Options Considered\*\*
+**Options Considered**
 
 
 
-\* Full portfolio
+* Full portfolio
 
-\* Simplified MVP
+* Simplified MVP
 
 
 
-\*\*Why / Tradeoffs\*\*
+**Why / Tradeoffs**
 
 A smaller scope increases the likelihood of completion and allows earlier stakeholder feedback.
 
 
 
-\*\*Impact\*\*
+**Impact**
 
 Initial development focuses on four pages before expanding to projects and resume enhancements.
 
 
 
-\---
+---
 
 
 
-\### 2026-06-05 — Defer Java + Spring Boot for MVP
+### 2026-06-05 — Defer Java + Spring Boot for MVP
 
 
 
-\*\*Status:\*\* Decided / Deferred
+**Status:** Decided / Deferred
 
 
 
-\*\*Options Considered\*\*
+**Options Considered**
 
 
 
-\* Java + Spring Boot application
+* Java + Spring Boot application
 
-\* Plain HTML/CSS/JavaScript
+* Plain HTML/CSS/JavaScript
 
-\* Modern frontend framework/library
+* Modern frontend framework/library
 
-\* Static site approach
+* Static site approach
 
 
 
-\*\*Why / Tradeoffs\*\*
-
-\*\*Why / Tradeoffs\*\*
+**Why / Tradeoffs**
 
 Feedback from Code Club RDU suggested that Java + Spring Boot introduces additional complexity without solving a current MVP requirement. Since the website primarily contains static content, navigation, project information, and professional contact links, a frontend-first approach better aligns with the project's immediate goals.
 
 
 
-\*\*Impact\*\*
+**Impact**
 
 MVP development will focus on frontend implementation and user experience. Spring Boot may be revisited later if backend features become necessary.
 
@@ -152,15 +150,12 @@ MVP development will focus on frontend implementation and user experience. Sprin
 
 
 
-\## Version History
+## Version History
 
 
 
 | Version | Date | Notes |
-
-|----------|----------|----------|
-
+|---------|------------|-------------------------------------------------------------|
 | 1.0 | 2026-06-03 | Initial technical decisions documented. |
-
 | 1.1 | 2026-06-05 | Updated following Code Club RDU feedback regarding MVP scope and architecture. |
 
